@@ -4,11 +4,11 @@
   "description": "Component library",
   "private": false,
   "scripts": {
-    "build": "webpack --mode production",
-    "build:dev": "webpack --mode development",
+    "build": "webpack --mode production --config webpack.production.js",
+    "build:dev": "webpack --mode development --config webpack.production.js",
     "build:start": "cd dist && PORT=8080 npx serve",
-    "start": "webpack serve --open --mode development",
-    "start:live": "webpack serve --open --mode development --live-reload --hot",
+    "start": "webpack serve --open --mode development --config webpack.config.js",
+    "start:live": "webpack serve --open --mode development --live-reload --hot --config webpack.config.js",
     "start:test": "jest -u --env=jsdom --watchAll",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
