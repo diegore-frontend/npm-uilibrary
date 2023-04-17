@@ -8,7 +8,7 @@ yarn.lock
 # Folders
 .storybook
 config
-dist
+src
 src/**/*.stories.@(js|jsx|ts|tsx)
 src/**/*.test.@(js|jsx|ts|tsx)
 src/**/__snapshots__
